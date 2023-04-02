@@ -105,7 +105,14 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   padding: 2rem 0;
 }
-
+.hello {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
 .hello-content {
   display: flex;
   justify-content: space-between;
@@ -124,6 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hello-text {
   margin-right: 2rem;
+  max-width: 50%;
 }
 
 .hello-text h2 {
