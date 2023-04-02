@@ -60,7 +60,7 @@ body, button {
 
 /* Button color classes */
 .header-button.color1 {
-  background-color: #FF5733;
+  background-color: #ff9900;
 }
 
 .header-button.color1:hover {
@@ -68,7 +68,7 @@ body, button {
 }
 
 .header-button.color2 {
-  background-color: #33C4FF;
+  background-color: #f2cf43;
 }
 
 .header-button.color2:hover {
@@ -76,13 +76,25 @@ body, button {
 }
 
 .header-button.color3 {
-  background-color: #B8FF33;
+  background-color: #ff5683;
 }
 
 .header-button.color3:hover {
   background-color: #7FDB4C;
 }
+.header-button.color4 {
+  background-color: #94db76;
+}
 
+.header-button.color4:hover {
+  background-color: #94db76;
+}.header-button.color5 {
+  background-color: #d78aea;
+}
+
+.header-button.color5:hover {
+  background-color: #7FDB4C;
+}
 /* Headers (h1, h2, h3, h4, h5, h6) */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
