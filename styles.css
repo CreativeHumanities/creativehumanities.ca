@@ -1,3 +1,8 @@
+/* Add this font definition at the top of your CSS file */
+body, button {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -10,6 +15,7 @@
   color: #ff9900;
   text-decoration: none;
   transition: color 0.3s;
+  font-weight: 700; /* Apply the bold font weight to navbar links */
 }
 
 .navbar a:hover {
@@ -45,10 +51,16 @@
   text-decoration: none;
   border-radius: 20px;
   margin: 0 0.5rem;
+  font-weight: 700; /* Apply the bold font weight to header buttons */
 }
 
 .header-button:hover {
   background-color: #0056b3;
   color: #ffffff;
   text-decoration: none;
+}
+
+/* Headers (h1, h2, h3, h4, h5, h6) */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Apply the bold font weight to headers */
 }
