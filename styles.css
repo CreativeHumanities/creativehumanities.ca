@@ -108,6 +108,14 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 75%;
   margin: 0 auto;
 }
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  max-width: 75%;
+  margin: 0 auto;
+}
 /* Hello! section */
 #hello {
   display: flex;
@@ -173,10 +181,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project {
-  display: flex;
-  align-items: center; /* Added to align the text and image vertically */
+  align-items: center;
   padding: 2rem 0;
-  max-width: 75%; /* Added to restrict the width of the content */
+  max-width: 100%;
 }
 
 .project-text, .project-image {
