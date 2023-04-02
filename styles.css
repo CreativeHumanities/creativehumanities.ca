@@ -129,9 +129,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 50%;
 }
 
-.hello-image {
+.content-image {
   flex: 1;
   max-width: 50%;
+  height: auto;
 }
 
 .hello-text h2 {
@@ -167,14 +168,6 @@ width: 100%;
 height: 20px;
 background-image: url('graphics/pattern-image.ext');
 background-repeat: repeat-x;
-}
-
-.project {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-  max-width: 100%;
 }
 
 .project-text, .project-image {
