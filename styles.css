@@ -130,3 +130,53 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff9900;
   margin-bottom: 1rem;
 }
+/* Projects section */
+#projects {
+  padding: 2rem 0;
+}
+
+.projects-header {
+  background-color: #00b3ac;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.projects-header::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url('graphics/pattern-image.ext');
+  background-repeat: repeat-x;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.project-text, .project-image {
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 45%;
+}
+
+.project-text {
+  margin-right: 2rem;
+}
+
+.project-text h2 {
+  color: #00b3ac;
+  margin-bottom: 1rem;
+}
