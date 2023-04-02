@@ -109,22 +109,24 @@ h1, h2, h3, h4, h5, h6 {
 .hello-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center; /* Change this from flex-start to center */
   max-width: 1200px;
   width: 100%;
   padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.hello-text, .hello-image {
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 45%;
 }
 
 .hello-text {
-  flex: 1;
   margin-right: 2rem;
 }
 
 .hello-text h2 {
   color: #ff9900;
   margin-bottom: 1rem;
-}
-
-.hello-image {
-  flex: 1;
 }
