@@ -99,6 +99,15 @@ body, button {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
+/* This should fix all the alignment in the sections */
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  max-width: 75%;
+  margin: 0 auto;
+}
 /* Hello! section */
 #hello {
   display: flex;
@@ -106,11 +115,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2rem 0;
 }
 .hello {
-  max-width: 75%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 2rem 0;
 }
 .hello-content {
@@ -124,9 +128,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hello-text, .hello-image {
+  margin-right: 2rem;
   flex: 1;
   max-width: 50%;
-  flex-basis: 45%;
 }
 
 .hello-text {
@@ -170,11 +174,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .project {
   display: flex;
-  justify-content: center;
   align-items: center; /* Added to align the text and image vertically */
   padding: 2rem 0;
   max-width: 75%; /* Added to restrict the width of the content */
-  margin: 0 auto; /* Added to center the content horizontally */
 }
 
 .project-text, .project-image {
