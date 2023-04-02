@@ -15,7 +15,7 @@ body, button {
   color: #ff9900;
   text-decoration: none;
   transition: color 0.3s;
-  font-weight: 700; /* Apply the bold font weight to navbar links */
+  font-weight: 700;
 }
 
 .navbar a:hover {
@@ -46,21 +46,44 @@ body, button {
 .header-button {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: #007bff;
   color: #ffffff;
   text-decoration: none;
   border-radius: 20px;
   margin: 0 0.5rem;
-  font-weight: 700; /* Apply the bold font weight to header buttons */
+  font-weight: 700;
 }
 
 .header-button:hover {
-  background-color: #0056b3;
   color: #ffffff;
   text-decoration: none;
 }
 
+/* Button color classes */
+.header-button.color1 {
+  background-color: #FF5733;
+}
+
+.header-button.color1:hover {
+  background-color: #C70039;
+}
+
+.header-button.color2 {
+  background-color: #33C4FF;
+}
+
+.header-button.color2:hover {
+  background-color: #009ACD;
+}
+
+.header-button.color3 {
+  background-color: #B8FF33;
+}
+
+.header-button.color3:hover {
+  background-color: #7FDB4C;
+}
+
 /* Headers (h1, h2, h3, h4, h5, h6) */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; /* Apply the bold font weight to headers */
+  font-weight: 700;
 }
