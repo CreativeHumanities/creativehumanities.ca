@@ -31,7 +31,7 @@
     </div>
   </header>
 
- /* Hello! section */
+/* Hello! section */
 #hello {
   display: flex;
   justify-content: center;
@@ -41,17 +41,17 @@
 .hello-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center; /* Change this from flex-start to center */
   max-width: 1200px;
   width: 100%;
   padding: 1rem;
-  flex-wrap: wrap; /* Add this to make it responsive */
+  flex-wrap: wrap;
 }
 
 .hello-text, .hello-image {
   flex: 1;
-  max-width: 50%; /* Add this to set a maximum width for both text and image */
-  flex-basis: 45%; /* Add this to give some space between text and image */
+  max-width: 50%;
+  flex-basis: 45%;
 }
 
 .hello-text {
