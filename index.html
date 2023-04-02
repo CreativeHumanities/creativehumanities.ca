@@ -20,6 +20,7 @@
 
   <!-- Header -->
   <header class="header">
+      <div class="header-content">
     <img src="graphics/logos/CHlogo.png" alt="Header Feature Image">
     <div class="header-buttons">
       <a href="#section1" class="header-button color1">Hello!</a>
@@ -48,5 +49,29 @@
   </div>
 </section>
   <script src="scripts.js"></script>
+    <script>
+  // Get the elements by their ID or class
+  const navbar = document.getElementById('navbar');
+  const headerContent = document.querySelector('.header-content');
+  const helloSection = document.getElementById('hello');
+
+  // Initially hide the Hello! section
+  helloSection.style.display = 'none';
+
+  // Function to show the Hello! section when scrolling
+  function showHelloSection() {
+    const scrollPosition = window.scrollY || window.pageYOffset;
+
+    // Check if the scroll position is below the header content
+    if (scrollPosition > headerContent.offsetHeight + navbar.offsetHeight) {
+      helloSection.style.display = 'block';
+    } else {
+      helloSection.style.display = 'none';
+    }
+  }
+
+  // Listen for the scroll event
+  window.addEventListener('scroll', showHelloSection);
+</script>
 </body>
 </html>
