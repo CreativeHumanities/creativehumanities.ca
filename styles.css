@@ -2,12 +2,12 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  background-color: #333;
+  background-color: ##ffffff;
   padding: 1rem;
 }
 
 .navbar a {
-  color: #ffffff;
+  color: #ff9900;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -43,7 +43,7 @@
   background-color: #007bff;
   color: #ffffff;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 0 20px 20px 0;
   margin: 0 0.5rem;
 }
 
