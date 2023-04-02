@@ -32,7 +32,7 @@
     </div>
   </header>
 <!-- Add this section below the header -->
-<section id="hello">
+<section id="hello" class="hidden">
   <div class="hello-content">
     <div class="hello-text">
       <h2>Hello!</h2>
@@ -58,7 +58,7 @@
 
   // Function to show the Hello! section
   function showHelloSection() {
-    helloSection.style.display = 'block';
+    helloSection.classList.remove('hidden');
   }
 
   // Function to check if the Hello! section should be displayed when scrolling
