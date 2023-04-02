@@ -99,3 +99,32 @@ body, button {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
+/* Hello! section */
+#hello {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.hello-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.hello-text {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.hello-text h2 {
+  color: #ff9900;
+  margin-bottom: 1rem;
+}
+
+.hello-image {
+  flex: 1;
+}
