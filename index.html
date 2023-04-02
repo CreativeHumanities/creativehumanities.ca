@@ -49,29 +49,35 @@
   </div>
 </section>
   <script src="scripts.js"></script>
-    <script>
+<script>
   // Get the elements by their ID or class
   const navbar = document.getElementById('navbar');
   const headerContent = document.querySelector('.header-content');
   const helloSection = document.getElementById('hello');
+  const headerButtons = document.querySelectorAll('.header-button');
 
-  // Initially hide the Hello! section
-  helloSection.style.display = 'none';
-
-  // Function to show the Hello! section when scrolling
+  // Function to show the Hello! section
   function showHelloSection() {
+    helloSection.style.display = 'block';
+  }
+
+  // Function to check if the Hello! section should be displayed when scrolling
+  function checkHelloSectionVisibility() {
     const scrollPosition = window.scrollY || window.pageYOffset;
 
     // Check if the scroll position is below the header content
     if (scrollPosition > headerContent.offsetHeight + navbar.offsetHeight) {
-      helloSection.style.display = 'block';
-    } else {
-      helloSection.style.display = 'none';
+      showHelloSection();
     }
   }
 
   // Listen for the scroll event
-  window.addEventListener('scroll', showHelloSection);
+  window.addEventListener('scroll', checkHelloSectionVisibility);
+
+  // Add click event listeners to the header buttons
+  headerButtons.forEach((button) => {
+    button.addEventListener('click', showHelloSection);
+  });
 </script>
 </body>
 </html>
