@@ -163,7 +163,10 @@ h1, h2, h3, h4, h5, h6 {
 .project {
   display: flex;
   justify-content: center;
+  align-items: center; /* Added to align the text and image vertically */
   padding: 2rem 0;
+  max-width: 75%; /* Added to restrict the width of the content */
+  margin: 0 auto; /* Added to center the content horizontally */
 }
 
 .project-text, .project-image {
