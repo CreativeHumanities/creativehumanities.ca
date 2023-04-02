@@ -178,8 +178,14 @@ h1, h2, h3, h4, h5, h6 {
 .project-text {
   margin-right: 2rem;
 }
-
 .project-text h2 {
   color: #00b3ac;
   margin-bottom: 1rem;
+  text-shadow: none; /* Add this line to remove text shadow */
+  outline: none; /* Add this line to remove outline */
+  font-weight: bold; /* Add this line to use bold font */
+}
+.project-image img {
+  max-width: 100%;
+  height: auto;
 }
