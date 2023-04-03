@@ -133,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 .content-image img {
   max-width: 50%;
   height: auto;
+  flex-basis: 45%;
 }
 
 .hello-text h2 {
