@@ -100,19 +100,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 /* This should fix all the alignment in the sections */
-.section-wrapper {
+.section-wrapper, .content-setion {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
-  max-width: 75%;
   margin: 0 auto;
 }
-.content-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
+  
+.content-container {
   max-width: 75%;
   margin: 0 auto;
 }
