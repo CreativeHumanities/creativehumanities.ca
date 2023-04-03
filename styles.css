@@ -131,10 +131,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2rem 0;
 }
 
-.hello-text {
+.hello-text, .project-text {
   margin-right: 2rem;
   flex: 1;
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .content-image img {
@@ -151,7 +151,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-image {
-  max-width: 50%;
+  flex: 1;
+  max-width: 45%;
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap;
+  margin-bottom: 2rem;
 }
 /* Projects section */
 #projects {
