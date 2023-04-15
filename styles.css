@@ -9,7 +9,7 @@ body, button {
   justify-content: space-around;
   background-color: #ffffff;
   padding: 1rem;
-position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -126,7 +126,6 @@ body {
   }
 }
 
-}
 /* Hello! section */
 #hello {
   display: flex;
@@ -149,14 +148,6 @@ body {
   color: #ff9900;
   margin-bottom: 1rem;
 }
-.content-text, .content-image {
-  grid-column: span 6;
-}
-
-.content-image {
-  flex: 1;
-  max-width: 45%;
-}
 
 .content-section {
   display: flex;
@@ -164,10 +155,13 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  width: 100%;
 }
+
 /* Projects section */
 #projects {
   padding: 2rem 0;
+  overflow: hidden; /* add this to hide the white space on the left margin */
 }
 
 .projects-header {
@@ -184,6 +178,14 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.project-text h2 {
+  color: #00b3ac;
+  margin-bottom: 1rem;
+  text-shadow: none;
+  outline: none;
+  font-weight: bold;
+}
+
 .project-text, .project-image {
   flex: 1;
   max-width: 50%;
@@ -193,16 +195,11 @@ body {
 .project-text {
   margin-right: 2rem;
 }
-.project-text h2 {
-  color: #00b3ac;
-  margin-bottom: 1rem;
-  text-shadow: none; /* Add this line to remove text shadow */
-  outline: none; /* Add this line to remove outline */
-  font-weight: bold; /* Add this line to use bold font */
-}
-/*Talent Section*/
-#Talent {
+
+/* Talent Section */
+#talent {
   padding: 2rem 0;
+  overflow: hidden; /* add this to hide the white space on the left margin */
 }
 
 .talent-header {
@@ -219,15 +216,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.talent-text, .project-image {
-  flex: 1;
-  max-width: 50%;
-  flex-basis: 45%;
-}
-
-.talent-text {
-  margin-right: 2rem;
-}
 .talent-text h2 {
   color: #d78aea;
   margin-bottom: 1rem;
@@ -236,50 +224,100 @@ body {
   font-weight: bold;
 }
 
-.talent-slider {
-  position: relative;
-  max-width: 100%;
-  max-height: 400px;
-  overflow: hidden;
+.talent-text, .talent-image {
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 45%;
 }
 
-.talent-slider:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #d78aea;
-  opacity: 0.3;
-  z-index: 10;
+.talent-text {
+  margin-right: 0; /* remove the right margin to center the text */
 }
 
+/* TALENT SLIDER */
+.slider-container {
+margin: 0;
+padding: 0;
+width: 100%;
+}
 .slider {
-  position: relative;
-  z-index: 5;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 400px;
+position: relative;
+height: 675px;
+overflow: hidden;
+width: 100%;
+box-sizing: border-box;
 }
 
-.slider-text {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: #000000;
-  z-index: 15;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add this line */
+.slick-list, .slick-track {
+height: 100%;
 }
 
-.slider-text h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: 000000;
+.slide {
+position: relative;
+height: 675px;
 }
 
-.slider-text p {
-  font-size: 1rem;
+.slide::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #d78aea;
+opacity: 0.3; /* 30% opacity */
+z-index: 1;
+}
+
+.slide img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.slide-text {
+position: absolute;
+left: 1rem;
+top: 50%;
+transform: translateY(-50%);
+color: #000000;
+z-index: 1;
+}
+
+.slide-text h3 {
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+}
+
+.slide-text p {
+font-size: 1rem;
+}
+
+/* Slider Navigation */
+#talent .slick-dots {
+position: static;
+margin-top: 10px;
+}
+
+.slick-dots li {
+display: inline-block;
+margin: 0 5px;
+}
+
+.slick-dots button {
+width: 10px;
+height: 10px;
+background-color: #bbb;
+border-radius: 50%;
+border: none;
+outline: none;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.slick-dots li.slick-active button,
+.slick-dots button:hover {
+background-color: #d78aea;
 }
 

@@ -7,15 +7,10 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-<!-- code for slick slider-->
-<!-- Slick Slider CSS -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-
-<!-- Slick Slider JS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 </head>
 <body>
@@ -64,7 +59,7 @@
     <!-- Projects header -->
     <div class="projects-header">
       <h2>Projects</h2>
-      <p>Here are some of our featured projects. Click on each project to learn more.</p>
+      <p style>Here are some of our featured projects. Click on each project to learn more.</p>
     </div>
 
   <!-- Project 1 -->
@@ -142,48 +137,35 @@
       <h2>Talent</h2>
       <p>Creative Humanities is an experiment in talent-orientated research. We’ve created new models that boost the career development of undergraduate students, regardless of their area of practice. Most humanities projects make ideas; we make talent.</p>
     </div>
-<section class="talent-slider">
-  <div class="slider-container">
-    <!-- Slide 1 -->
-    <div class="slider" style="background-image: url('graphics/headshots/Michael-Rugo.jpg')">
-      <div class="slider-text">
-        <h3>Blog Post Title 1</h3>
-        <p>Blog post description...</p>
-      </div>
+<div class="slider-container" style="padding: 0;">
+<div class="slider">
+  <div class="slide">
+    <img src="graphics/headshots/Michael-Rugo.jpg" alt="Slide 1 Image">
+    <div class="slide-text">
+      <h3>Slide 1 Title</h3>
+      <p>Slide 1 description.</p>
     </div>
-    <!-- Slide 2 -->
-    <div class="slider" style="background-image: url('graphics/headshots/PaolaDiBarbora.jpg')">
-      <div class="slider-text">
-        <h3>Blog Post Title 2</h3>
-        <p>Blog post description...</p>
-      </div>
-    </div>
-    <!-- Slide 3 -->
-    <div class="slider" style="background-image: url('graphics/headshots/VictoriaWebb.jpg')">
-      <div class="slider-text">
-        <h3>Blog Post Title 3</h3>
-        <p>Blog post description...</p>
-      </div>
-    </div>
-    <!-- Add more slides as needed -->
   </div>
+  <div class="slide">
+    <img src="graphics/headshots/PaolaDiBarbora.jpg" alt="Slide 2 Image">
+    <div class="slide-text">
+      <h3>Slide 2 Title</h3>
+      <p>Slide 2 description.</p>
+    </div>
+  </div>
+</div>
+</div>
 </section>
-
 <script>
-  // Initialize Slick Slider
-  $(document).ready(function() {
-    $('.slider-container').slick({
+  $(document).ready(function(){
+    $('.slider').slick({
       dots: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: true
+      autoplay: true,
+      autoplaySpeed: 3000,
+      appendDots: $('.slider-container'),
     });
   });
 </script>
-
-<script src="scripts.js"></script>
-
 
 </body>
 </html>
